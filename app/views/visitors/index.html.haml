@@ -20,9 +20,11 @@
           = link_to caso do
             .panel.panel-default.animated.bounceInUp
               .panel-heading
-                = caso.titulo
-              - unless !caso.imagens.first
+                %h4= caso.titulo
+              - if caso.imagens.first
                 = image_tag(caso.imagens.first.imagen.url(:thumb))
+              - else
+                = image_tag('http://placehold.it/200x200',style: 'width:100%')
               .panel-body.small
                 Necesita:
                 - caso.recursos.each_with_index do |rec, index|
