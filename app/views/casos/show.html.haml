@@ -15,6 +15,7 @@
         - else
           - if @caso.youtubevideo
             .item{style: "background:linear-gradient(rgba(9, 36, 154,0.45),rgba(9, 36, 154,0.45))"}
+              =image_tag imagen.imagen.url(:original)
           - else
             .item.active{style: "background:linear-gradient(rgba(9, 36, 154,0.45),rgba(9, 36, 154,0.45))"}
               =image_tag imagen.imagen.url(:original)
@@ -129,3 +130,5 @@
   };
   $(document).ready(ready);
   $(document).on('page:load', ready);
+:css
+  .item img{width:100%;height:auto}
