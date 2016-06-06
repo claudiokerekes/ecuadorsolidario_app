@@ -19,8 +19,8 @@
         = f.fields_for :recursos do |recurso_form|
           .form-inline
             = recurso_form.text_field :nombre, placeholder: "¿Qué necesitas?", class: "form-control"
-            = recurso_form.number_field :objetivo, placeholder: "Cuántas unidades?", class: "form-control"
-            = recurso_form.number_field :conseguidos, value: 0
+            = recurso_form.number_field :objetivo, placeholder: "¿Cuántas unidades?", class: "form-control"
+            = recurso_form.number_field :conseguidos, value: 0, placeholder: "¿Cuántas llevas conseguidas?", class: "form-control"
             = recurso_form.link_to_remove "X", class: 'btn btn-danger btn-xs'
       %p
         = f.link_to_add :recursos, class: 'btn btn-primary' do
