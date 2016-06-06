@@ -13,7 +13,11 @@ class Caso < ActiveRecord::Base
       end
       @objetivo += recurso.objetivo
     end
+    if @objetivo >= 1
     @conseguidos*100/@objetivo
+    else
+      0
+    end
   end
 
   accepts_nested_attributes_for :recursos
