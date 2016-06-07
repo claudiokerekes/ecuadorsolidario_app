@@ -24,11 +24,12 @@ gem 'pg'
 gem 'simple_form'
 group :development do
   gem 'better_errors'
-  gem 'capistrano', '~> 3.1.0'
-  gem 'capistrano-bundler', '~> 1.1.2'
-  gem 'capistrano-rails', '~> 1.1.1'
-  gem 'capistrano-rails-console'
-  gem 'capistrano-rvm', github: "capistrano/rvm"
+  gem 'capistrano3-postgres', require: false
+  gem 'capistrano-passenger'
+  gem 'capistrano'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
