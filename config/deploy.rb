@@ -1,6 +1,3 @@
-require 'capistrano/bundler'
-require 'capistrano/rails'
-
 set :application, 'ecuadorsolidario_app'
 set :repo_url, 'git@github.com/pmaojo/ecuadorsolidario_app.git'
 
