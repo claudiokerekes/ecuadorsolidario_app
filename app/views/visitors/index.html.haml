@@ -13,6 +13,7 @@
           = link_to "Solicita ayuda", new_caso_path, class: 'btn btn-success  animated slideInRight'
 / Main Content
 .container
+  = Rails.application.secrets.email_provider_username
   .row
     .col-lg-10.col-lg-offset-1.col-md-12
       - @casos.each do |caso|
