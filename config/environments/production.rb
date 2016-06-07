@@ -73,7 +73,8 @@ Rails.application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
-  ActionMailer::Base.smtp_settings = {
+
+  config.action_mailer.smtp_settings = {
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :user_name            => Rails.application.secrets.email_provider_usernam,
