@@ -63,3 +63,4 @@ gem 'rails_12factor', group: :production
 gem "blogit", github: "pmaojo/blogit", branch: "master"
 gem "acts-as-taggable-on"
 gem 'rich'
+gem 'protected_attributes'
