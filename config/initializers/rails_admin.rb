@@ -10,6 +10,16 @@ RailsAdmin.config do |config|
     config.authorize_with do
       redirect_to main_app.root_path unless current_user.admin?
     end
+    config.model Blogit::Post do
+      edit do
+        field :title
+        field :body, :rich_editor do
+          config({
+            :insert_many => true
+          })
+        end
+      end
+    end
 
   ## == Cancan ==
   # config.authorize_with :cancan
