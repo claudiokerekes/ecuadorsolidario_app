@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   resources :conversations, :path => "conversaciones" do
     resources :messages, :path => "mensajes"
   end
+  mount Blogit::Engine => "/blog"
 
 end

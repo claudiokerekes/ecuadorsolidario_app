@@ -432,3 +432,8 @@ h1.captionslider {position:absolute;top:20%;width:100%;text-align:center;color:#
 .form, .form-centered {
     width: 100%;
 }}
+.blog {background: #09249a;color:white}
+footer {background: #464243;color:grey}
+footer a{color:yellow}
+footer a:hover{color:white}
+.fa-inverse {color:grey!important}

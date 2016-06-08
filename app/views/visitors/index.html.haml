@@ -11,10 +11,9 @@
           %br
           = link_to "Ver casos", casos_path, class: 'btn btn-default animated slideInLeft'
           = link_to "Solicita ayuda", new_caso_path, class: 'btn btn-success  animated slideInRight'
-/ Main Content
 .container
   .row
-    .col-lg-10.col-lg-offset-1.col-md-12
+    .col-md-12
       - @casos.each do |caso|
         .col-md-4
           = link_to caso do
@@ -40,3 +39,30 @@
                     %span.small= caso.progreso
                     %span.small= raw('%')
                     %span.small conseguido
+.row.blog
+  %h2.text-center
+    Últimos artículos en el Blog
+.row
+  .container
+    %h2.text-center
+      Colabora con ecuadorsolidario.org
+    .col-md-6
+      %p
+        Ecuador te necesita, puedes ayudarnos donando tu tiempo y tu conocimiento. Las áreas en las que necesitamos ayuda son:
+        %ul
+          %li Desarrollo en Ruby on Rails
+          %li Desarrollo Web
+          %li Arquitectura de Software
+          %li Project Management
+          %li Diseño UX/UI
+          %li Diseño Gráfico y Publicitario
+          %li Productor Audiovisual
+          %li Comunicación Digital
+          %li Relaciones Públicas
+          %li Data Entry
+    .col-md-6
+      = image_tag 'imagencolaboracion.jpg'
+.text-center
+  Con el apoyo de
+  %br
+  (logos de colaboradores)

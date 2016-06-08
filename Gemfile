@@ -60,3 +60,5 @@ gem 'paperclip', '~> 4.2.0'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'rails_12factor', group: :production
+gem "blogit", github: "pmaojo/blogit", branch: "master"
+gem "acts-as-taggable-on"
