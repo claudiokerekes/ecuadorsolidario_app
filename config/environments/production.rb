@@ -74,10 +74,12 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: "smtp.pulpomarketing.com",
     port: 587,
-    domain: "gmail.com",
-    user_name: "ecu.solidario@gmail.com",
+    domain: "pulpomarketing.com",
+    authentication: "plain",
+    :openssl_verify_mode => 'none',
+    user_name: "ecuador@pulpomarketing.com",
     password: Rails.application.secrets.email_provider_password
   }
 
