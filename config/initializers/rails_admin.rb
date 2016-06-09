@@ -10,7 +10,6 @@ RailsAdmin.config do |config|
     config.authorize_with do
       redirect_to main_app.root_path unless current_user.admin?
     end
-    config.model Blogit::Post do
 
   ## == Cancan ==
   # config.authorize_with :cancan
