@@ -31,7 +31,7 @@ Blogit.configure do |config|
 
   # If blog content contains code, this should be highlighted using
   # one of the renderers.
-  config.highlight_code_syntax = true
+  config.highlight_code_syntax = false
 
   # The syntax highlighter to use when highlight_code_syntax is set.
   config.syntax_highlighter = :albino
