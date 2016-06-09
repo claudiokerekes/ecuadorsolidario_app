@@ -9,7 +9,7 @@
     .panel-footer
       = render "blogit/posts/comments_count",
         post: post if defined?(show_comments_count) and show_comments_count
-    .backimagepost.content
-      - post.gallery.pictures.where(:destacada => true).each do |imagen|
-        = image_tag imagen.image.url(:med)
-      .project-overlay
+    -# .backimagepost.content
+    -#   - post.gallery.pictures.where(:destacada => true).each do |imagen|
+    -#     = image_tag imagen.image.url(:med)
+    -#   .project-overlay

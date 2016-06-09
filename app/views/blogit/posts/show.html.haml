@@ -6,14 +6,14 @@
       %h1
         = render "blogit/posts/post_head", post: @post
       = render "blogit/posts/blogger_information", post: @post
-  .panel-back
-    - if @post.gallery
-      .carousel-inner{:role => "listbox"}
-        .item.active
-          - @post.gallery.pictures.where(:destacada => true).each do |imagen|
-            = image_tag imagen.image.url(:original)
-        - @post.gallery.pictures.where(:destacada => false).each do |imagen|
-          .item= image_tag imagen.image.url(:original)
+  -# .panel-back
+  -#   - if @post.gallery
+  -#     .carousel-inner{:role => "listbox"}
+  -#       .item.active
+  -#         - @post.gallery.pictures.where(:destacada => true).each do |imagen|
+  -#           = image_tag imagen.image.url(:original)
+  -#       - @post.gallery.pictures.where(:destacada => false).each do |imagen|
+  -#         .item= image_tag imagen.image.url(:original)
   .panel-body.col-lg-8
     = format_content(@post.body)
   = render "blogit/posts/tags", post: @post
