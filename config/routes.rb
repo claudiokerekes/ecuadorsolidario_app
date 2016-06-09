@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount Rich::Engine => '/rich', :as => 'rich'
   resources :imagens, only: [:index, :create]
   mount RailsAdmin::Engine => '/campamento', as: 'rails_admin'
   resources :casos

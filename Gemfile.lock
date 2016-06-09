@@ -245,8 +245,6 @@ GEM
     rack-pjax (0.8.0)
       nokogiri (~> 1.5)
       rack (~> 1.1)
-    rack-raw-upload (1.1.1)
-      multi_json
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.6)
@@ -303,14 +301,6 @@ GEM
     remotipart (1.2.1)
     responders (2.2.0)
       railties (>= 4.2.0, < 5.1)
-    rich (1.4.6)
-      jquery-rails
-      kaminari
-      mime-types
-      paperclip
-      rack-raw-upload
-      rails (>= 3.2.0)
-      sass-rails
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -434,7 +424,6 @@ DEPENDENCIES
   rb-fchange
   rb-fsevent
   rb-inotify
-  rich
   rspec-rails
   sass-rails (~> 5.0)
   selenium-webdriver
