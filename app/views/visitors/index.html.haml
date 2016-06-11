@@ -40,8 +40,19 @@
                     %span.small= raw('%')
                     %span.small conseguido
 .row.blog
-  %h2.text-center
-    Últimos artículos en el Blog
+  .container
+    %h2.text-center
+      Últimos artículos en el Blog
+    - @posts.each do |post|
+      .col-md-4
+        .panel.panel-default
+          .panel-heading
+            %h2= post.title
+          .panel-body
+            %p= post.description
+
+:css
+  .panel-body{color:grey}
 .row
   .container
     %h2.text-center
@@ -61,7 +72,8 @@
           %li Relaciones Públicas
           %li Data Entry
     .col-md-6
-      = image_tag 'imagencolaboracion.jpg'
+      %br
+      = image_tag 'imagencolaboracion.png', class: 'thumbnail'
 .text-center
   Con el apoyo de
   %br
