@@ -49,12 +49,12 @@
       Últimos artículos en el Blog
     - @posts.each do |articulo|
       .col-md-4
-        = link_to post_path(articulo.id) do
+        = link_to(articulo) do
           .panel.panel-primary
             .panel-heading
-              %h5= post.title
+              %h5= articulo.title
             .panel-body
-              %p= post.description
+              %p= articulo.description
 
 :css
   .panel-body{color:grey}
