@@ -47,9 +47,9 @@
   .container
     %h2.text-center
       Últimos artículos en el Blog
-    - @posts.each do |post|
+    - @posts.each do |articulo|
       .col-md-4
-        = link_to post do
+        = link_to post_path(post) do
           .panel.panel-primary
             .panel-heading
               %h5= post.title
