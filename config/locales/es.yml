@@ -20,6 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
+  blogit:
+    comments:
+      comments: Comentarios
+      leave_a_coment: Deja un comentario
+      name: Nombre
+      your_website: Sitio web
+      email_never_displayed: Email (no se mostrará nunca)
+      your_comment: Comentario
+      adding_comment: Enviar comentario
   admin:
     js:
       true: Cierto
