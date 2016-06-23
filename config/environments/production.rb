@@ -84,7 +84,7 @@ Rails.application.configure do
   }
 
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => '23.246.221.198' }
+  config.action_mailer.default_url_options = { :host => 'www.ecuadorsolidario.org' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
